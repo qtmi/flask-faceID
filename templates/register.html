@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+
+        <head>
+            <title>Face Lock</title> 
+       
+         <link rel="stylesheet" href="{{url_for('static',filename='styled.css')}}"> 
+     </head>
+     <body>
+         <div class="banner">
+             <div class="col"
+             style="border-radius: 20px;padding: 0px;background-color:rgba(208, 249, 3, 0.006);margin:0px 10px 10px 10px;height: 400px;">
+    
+            <form style="text-align: center;" action='/add' method="POST" enctype="multipart/form-data">
+                <h1 style="border-radius: 20px 20px 0px 0px; text-align:center;color:rgb(217, 226, 234);padding: 10px; background-color:#009688;">Register</h1>
+                <label style="font-size: 18px;color:rgb(217, 226, 234) ;""><b>Username</b></label>
+                <br>
+                <input type="text" id="newusername" name='newusername'
+                    style="font-size: 20px;margin-top:10px;margin-bottom:10px;" required>
+                <br>
+                <label style="font-size: 15px; color:rgb(217, 226, 234) ;"><b>QID/Passport No:</b></label>
+                <br>
+                <input type="number" id="newusereid" name='newuserid'
+                    style="font-size: 20px;margin-top:10px;margin-bottom:10px;" required>
+                <br>
+                <button style="width: 236px;margin-top: 20px;font-size: 20px;padding: 10px;background-color: rgb(203, 209, 215);" type='submit' class='btn btn-danger'>Register
+                </button>
+                <br>
+                 <a style="text-decoration: none;max-width: 300px;" href="{{url_for('login')}}">
+                <button
+                    style="font-size: 24px;font-weight: bold;border-radius: 10px;width:240px;padding: 10px;margin-top: 30px;margin-bottom: 30px;"
+                    type='button' class='btn btn-secondary'>Login </button>
+            </a>
+
+            </form>
+        </div>
+
+    </div>
+
